@@ -13,4 +13,14 @@ class Question{
         this.answer=answer;
     }
 
+    /**
+     * 
+     * @param {String} answer receive a string, this string is the answer of the user.
+     * @returns {Boolean} return true, if the user answers correctly
+     */
+
+    correctAnswer(answer){
+        return this.answer === answer;
+    }
+
 }
