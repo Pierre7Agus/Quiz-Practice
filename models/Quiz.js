@@ -11,4 +11,14 @@ class Quiz{
     constructor(questions){
         this.questions=questions;
     }
+
+
+    /**
+     * 
+     * @returns return a Question object of the array of Question objects
+     */
+
+    getCurrentQuestion(){
+        return this.questions[this.index];
+    }
 }
