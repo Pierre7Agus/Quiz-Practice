@@ -18,4 +18,10 @@ class UI{
             options.append(button);
         });
     }
+
+    showProgress(index,total){
+        const progress = document.getElementById('progress');
+        progress.innerText=`Pregunta ${index} de ${total} preguntas`;
+
+    }
 }
