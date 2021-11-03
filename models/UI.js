@@ -2,7 +2,7 @@ export default class UI{
     constructor(){}
 
     showQuestion(text){
-        const title = document.getElementById('title');
+        const title = document.getElementById('question');
         title.innerText = text;
     }
 
