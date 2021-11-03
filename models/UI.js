@@ -1,20 +1,22 @@
-class UI{
+export default class UI{
     constructor(){}
 
     showQuestion(text){
-        const question = document.getElementById('title');
-        question.innerText = text;
+        const title = document.getElementById('title');
+        title.innerText = text;
     }
 
 
     showChoices(choices, callback){
         const options = document.getElementById('choices');
+        options.innerHTML='';
         choices.forEach((elemento)=>{
             const button = document.createElement('button');
             button.innerText= elemento;
             button.addEventListener('click',(event)=>{
                 callback(event.target.innerText);
             });
+            button.classList.add('button');
             options.append(button);
         });
     }

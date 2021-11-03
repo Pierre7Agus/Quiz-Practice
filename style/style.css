@@ -22,7 +22,7 @@ body {
 
 h1 {
   color: #57636e;
-  font-size: 3rem;
+  font-size: 2.3rem;
   text-align: center;
   padding: 2px 0px;
   
@@ -34,7 +34,7 @@ h1 {
   color: #5a6772;
 }
 
-.buttons {
+.button {
   margin-top: 30px;
 }
 
@@ -45,7 +45,7 @@ h1 {
   color: #fff;
   border-radius: .3rem;
   padding: 10px 20px;
-  margin: 10px 40px 10px 0px;
+  margin: 10px 20px 10px 10px;
 }
 .button:hover{
   cursor: pointer;

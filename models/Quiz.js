@@ -1,3 +1,6 @@
+//@ts-check
+
+import Question from './Question.js';//no uso esat clase pero para el autocompletado necesito importarlo
 export default class Quiz{
 
     score=0;
@@ -5,7 +8,7 @@ export default class Quiz{
 
     /**
      * 
-     * @param {[Question]} questions it receives an array, where each element is an object Question
+     * @param {Question[]} questions it receives an array, where each element is an object Question
      */
 
     constructor(questions){
