@@ -24,4 +24,19 @@ class UI{
         progress.innerText=`Pregunta ${index} de ${total} preguntas`;
 
     }
+
+
+    /**
+     * 
+     * @param {number} score recibe el puntaje total
+     */
+     showEnd(score){
+        const screenEnd = `
+        <h1>Resultado Final:</h1>
+        <h2>Tu puntaje es: ${score}</h2>
+        `;
+
+        const element = document.getElementById('quiz');
+        element.innerHTML=screenEnd;
+    }
 }
