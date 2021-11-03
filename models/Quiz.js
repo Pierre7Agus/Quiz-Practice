@@ -1,4 +1,4 @@
-class Quiz{
+export default class Quiz{
 
     score=0;
     index=0;
@@ -32,5 +32,14 @@ class Quiz{
             this.score++;
         }
         this.index++;
+    }
+
+
+    /**
+     * 
+     * @returns this method returns true when the Quiz ends
+     */
+    isEnded(){
+        return this.questions.length === this.index;
     }
 }
