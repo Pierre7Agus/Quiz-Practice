@@ -21,4 +21,16 @@ class Quiz{
     getCurrentQuestion(){
         return this.questions[this.index];
     }
+
+    /**
+     * 
+     * @param {String} answer this parameter is the user's response
+     */
+
+    getScore(answer){
+        if(this.getCurrentQuestion().correctAnswer(answer)){
+            this.score++;
+        }
+        this.index++;
+    }
 }
